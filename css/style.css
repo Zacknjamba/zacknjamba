@@ -1,4 +1,83 @@
 /********** Template CSS **********/
+
+.social-btn {
+  @apply text-purple-600 hover:text-white hover:bg-purple-600
+         p-2 rounded transition;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: max-content;
+  animation: marquee-right 8s linear infinite;
+}
+
+.logo-box {
+  min-width: 180px;
+  height: 80px;
+  background: #f4f4f5;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-box img {
+  max-height: 40px;
+  max-width: 120px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.75;
+}
+
+/* LEFT → RIGHT FAST */
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Optional hover effect */
+.logo-box img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Pause on hover */
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+
+.marquee {
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
 :root {
     --primary: #6244C5;
     --secondary: #FFC448;

@@ -33,6 +33,32 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+
+
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#8B3DFF'
+          }
+        }
+      }
+    }
+  </script>
+
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -84,24 +110,7 @@
                 <h2 class="typed-text-output d-inline"></h2>
                 <div class="typed-text d-none">
                     Web Designer, Full Stack Web Developer, Forex Trader, Apps Developer
-                </div>
-                      <div class="d-flex align-items-center pt-5">
-                    <!-- Download CV Button (UPDATED) -->
-                    <a href="./Zack-Njamba-1766670092883-Profile.pdf"
-                       class="btn btn-primary py-3 px-4 me-5"
-                       download>
-                        Download CV
-                    </a>
-
-                    <!-- YouTube Play Button (UPDATED BEHAVIOR ONLY) -->
-                    <a href="https://youtu.be/_rdo_stVcjQ?si=23cno1x03Bg8Kkl2"
-                       target="_blank"
-                       class="btn-play">
-                        <span></span>
-                    </a>
-
-                    <h5 class="ms-4 mb-0 d-none d-sm-block">Play Video</h5>
-                </div>
+               </div>
             </div>
 
             <div class="col-lg-6 ">
@@ -139,6 +148,81 @@
     </div>
     <!-- Video Modal End -->
 
+<!-- ================= PROFILE SECTION ================= -->
+<section class="relative py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+
+    <!-- Card -->
+    <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-10 lg:p-20">
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+        <!-- LEFT: IMAGE + SOCIALS -->
+        <div class="flex flex-col items-center">
+
+          <!-- Image -->
+          <div class="w-[280px] sm:w-[320px] md:w-[360px] bg-gray-100 rounded-2xl overflow-hidden">
+            <img
+              src="./img/20251223_182844_0000.png"
+              alt="Profile photo"
+              class="w-full h-auto object-cover"
+            />
+          </div>
+
+          <!-- Social Icons -->
+          <div class="mt-6 bg-white shadow-xl rounded-lg px-6 py-3 flex gap-4">
+            <a href="https://github.com/Zacknjamba" class="social-btn"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/zack-njamba-502002354?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-btn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://youtube.com/@zacknjamba?si=QkNPZLFEDCbJke1a" class="social-btn"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.link/8sd3oh" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.behance.net/zacknjamba" class="social-btn"><i class="fab fa-behance"></i></a>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: CONTENT -->
+        <div class="text-center lg:text-left">
+
+          <h2 class="text-3xl sm:text-4xl lg:text-[38px] font-semibold mb-6">
+            I am Professional User Experience Designer
+          </h2>
+
+          <p class="text-gray-600 text-base lg:text-lg leading-relaxed">
+            I design and develop services for customers specializing creating
+            stylish, modern websites, web services and online stores. My passion
+            is to design digital user experiences.
+          </p>
+
+          <p class="text-gray-600 text-base lg:text-lg mt-4">
+            I design and develop services for customers specializing creating
+            stylish, modern websites, web services.
+          </p>
+
+          <!-- Buttons -->
+          <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a
+              href="#"
+              class="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-purple-700 transition text-center"
+            >
+              My Projects
+            </a>
+
+            <a
+              href="./Zack-Njamba-1766670092883-Profile.pdf"
+              class="border px-8 py-3 rounded-lg font-medium hover:border-primary hover:text-primary transition flex items-center justify-center gap-2"
+            >
+              <i class="fas fa-download"></i>
+              Download CV
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ================= END PROFILE SECTION ================= -->
 
     <!-- About Start -->
     <div class="container-xxl py-6" id="about">
@@ -178,7 +262,6 @@
                     </div>
                     <p class="mb-0">I have worked on a variety of academic, personal, and self-initiated projects that demonstrate my skills in full-stack web development and UI/UX design. Each project is approached with attention to detail, performance, and usability, ensuring well-structured, responsive, and functional outcomes. These projects reflect my continuous growth, problem-solving ability, and commitment to delivering high-quality results.</p>
                 </div>
-                 
             </div>
         </div>
     </div>
@@ -536,6 +619,73 @@
     </div>
     <!-- Team End -->
 
+<section class="py-12 md:py-24 bg-white overflow-hidden">
+  <div class="container mx-auto px-4">
+    <!-- Heading -->
+    <div class="text-center max-w-2xl mx-auto">
+      <p class="text-sm uppercase tracking-widest text-gray-400 mb-4">
+        Happy Clients
+      </p>
+      <p class="text-base sm:text-lg text-gray-500">
+        I've had the pleasure of working with companies worldwide.
+      </p>
+    </div>
+
+    <!-- Marquee -->
+    <div class="relative mt-12 overflow-hidden">
+      <div class="marquee">
+        <div class="marquee-track flex space-x-12">
+
+          <!-- LOGO ITEM -->
+          <div class="logo-box flex-shrink-0 w-32">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="w-full h-auto object-contain">
+          </div>
+
+          <div class="logo-box flex-shrink-0 w-32">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" class="w-full h-auto object-contain">
+          </div>
+
+          <div class="logo-box flex-shrink-0 w-32">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png" alt="Slack" class="w-full h-auto object-contain">
+          </div>
+
+          <div class="logo-box flex-shrink-0 w-32">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" alt="Spotify" class="w-full h-auto object-contain">
+          </div>
+
+          <div class="logo-box flex-shrink-0 w-32">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" class="w-full h-auto object-contain">
+          </div>
+
+          <!-- DUPLICATE FOR SEAMLESS LOOP -->
+          <div class="logo-box flex-shrink-0 w-32">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="w-full h-auto object-contain">
+          </div>
+
+          <div class="logo-box flex-shrink-0 w-32">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" class="w-full h-auto object-contain">
+          </div>
+
+          <div class="logo-box flex-shrink-0 w-32">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png" alt="Slack" class="w-full h-auto object-contain">
+          </div>
+
+          <div class="logo-box flex-shrink-0 w-32">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" alt="Spotify" class="w-full h-auto object-contain">
+          </div>
+
+          <div class="logo-box flex-shrink-0 w-32">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" class="w-full h-auto object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
     <!-- Testimonial Start -->
     <div class="container-fluid bg-light py-5 my-5" id="testimonial">
@@ -708,8 +858,36 @@
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
 
 </html>
+
+
